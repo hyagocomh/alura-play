@@ -49,8 +49,14 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
-    overflow: scroll;
+
     gap: 15px;
+}
+.scroll-container {
+    width: 300px;
+    height: 200px;
+    overflow-y: scroll;
+    
 }
 
 /* RODAPÉ */
@@ -86,6 +92,24 @@
         gap: 33px;
     }
 
+    /*VIDEO*/
+
+    .videos__container{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .videos__item{
+        height: 303px;
+        width: 280px;
+        flex-grow: 1;
+    }
+
+    iframe{
+        border-radius: 10px;
+    }
+
     /* RODAPÉ */
 
     .rodape__container {
@@ -99,7 +123,6 @@
 @media (min-width: 1440px) {
     .menu__container{
         width: 239px;
-        overflow: scroll;
     }
 
 .menu__lista:nth-child(2),
